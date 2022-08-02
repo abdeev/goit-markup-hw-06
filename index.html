@@ -485,8 +485,8 @@
             </ul>
           </address>
         </div>
-
-        <div class="subscribe">
+        <div class="subscribe-functions">
+          <div class="subscribe">
           <h2 class="header-subscribe">приєднуйтесь</h2>
           <ul class="social-links">
             <li>
@@ -519,34 +519,106 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-form-container">
+          <p class="header-subscribe">Підпишіться на розсилку</p>
+          <form class="subscribe-form">
+            <label class="visually-hidden" for="email">Підпишіться на розсилку</label>
+            <span class="input-subscribe-container">
+              <input 
+                class="input-subscribe-form"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required>
+              
+            </span>
+            <button class="form-button-submit button-plane" type="submit">Підписатися</button>
+        </form>
+        </div>
+        </div>
+        
       </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal is-hidden" data-modal>
-        <button class="close-round-button" type="button" data-modal-close><svg class="svg-close-cross" width="11" height="11"><use href="./images/icons/sprite.svg#cross"></use>
+        <button class="close-round-button" type="button" data-modal-close>
+          <svg 
+          class="svg-close-cross" width="11" height="11">
+          <use href="./images/icons/sprite.svg#cross">
+          </use>
       </svg></button>
       <form class="modal-form">
-        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <p>Залиште свої дані, ми вам передзвонимо</p>
 
-        <label class="form-label margin-label" for="user-name">Ім'я</label>
-        <input class="form-input margin-input" type="text" name="user-name" id="user-name">
-
-        <label class="form-label margin-label" for="user-tel">Телефон</label>
-        <input class="form-input margin-input" type="user-tel" name="user-tel" id="user-tel">
-
-        <label class="form-label margin-label" for="user-mail">Пошта</label>
-        <input class="form-input margin-input" type="email" name="user-mail" id="user-mail">
+        <label class="form-label" for="user-name">Ім'я</label>
+        <span class="input-wrapper">
+          <input 
+        class="form-input" 
+        type="text" 
+        name="user-name" 
+        required 
+        pattern="^[a-zA-Zа-яА-Я]+$"
+        id="user-name"
+        title="Введіть ім'я"
+        />
+        <svg class="icon-profile" width="12" height="12">
+          <use href="./images/icons/sprite.svg#profile-icon"></use>
+        </svg>
+        </span>
+        <label class="form-label" for="user-tel">Телефон</label>
+        <span class="input-wrapper">
+        <input 
+        class="form-input" 
+        type="user-tel" 
+        name="user-tel" 
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" 
+        id="user-tel"
+        title="Введіть телефон у форматі xxx-xxx-xx-xx"
+        />
+        <svg class="icon-tel" >
+          <use href="./images/icons/sprite.svg#phone-tube"></use>
+        </svg>
+        </span>
+        <label class="form-label" for="user-mail">Пошта</label>
+        <span class="input-wrapper">
+          <input 
+        class="form-input" 
+        type="email" 
+        name="user-mail" 
+        required
+        id="user-mail"
+        title="Введіть електронну пошту"
+        />
+        <svg class="icon-mail" >
+          <use href="./images/icons/sprite.svg#envelope-form"></use>
+        </svg>
+        </span>
         
-        <label class="form-label margin-label" for="user-comment">Коментар</label>
-        <input class="form-input margin-input" type="text" name="user-comment" id="user-comment">
-
-        <label class="form-label" for="">Погоджуюся з розсилкою та приймаю <a class="terms" href="https://www.random.org/terms/2020-08-01/website">Умови договору</a></label>
-        <input class="form-input" type="checkbox" name="" id="">
-
-        <button type="submit" class="form-button-submit">Відправити</button>
+        <label class="form-label" for="user-comment"><textarea 
+        class="form-input comment" 
+        type="text" 
+        name="user-comment" 
+        placeholder="Введіть текст"></textarea>
+      </label>
+      <span class="input-wrapper">
+        <input 
+        class="form-input check-input visually-hidden" 
+        type="checkbox" 
+        name="accept" 
+        id="accept-checker"
+        />
+        <svg class="icon-check" width="11" height="8">
+        <use href="./images/icons/sprite.svg#icon-check"></use>
+      </svg>
+      <label class="form-label accept-description" for="accept-checker">Погоджуюся з розсилкою та приймаю&nbsp;<a class="terms" href="https://www.random.org/terms/2020-08-01/website">&nbsp;Умови договору&nbsp;</a></label>
+      </span>
+      
+      <button type="submit" class="form-button-submit">Відправити</button>
       </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

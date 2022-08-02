@@ -496,6 +496,7 @@ li > .accent-button {
 }
 .subscribe {
   align-self: flex-start;
+  margin-right: 93px;
 }
 .header-subscribe {
   margin-bottom: 20px;
@@ -506,7 +507,61 @@ li > .accent-button {
   text-transform: uppercase;
   color: #ffffff;
 }
-
+/* ===========footer-subcribe section=========================== */
+.subscribe-functions {
+  display: flex;
+  align-self: flex-start;
+}
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-subscribe-container {
+  margin-right: 12px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.input-subscribe-form {
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+  border-radius: 4px;
+  border-style: inset;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--bg-footer-color);
+}
+.form-button-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  letter-spacing: 0.06em;
+  background-color: var(--btn-bg-accent-color);
+  color: #ffffff;
+  transition: box-shadow var(--transition-time-and-func),
+    background-color var(--transition-time-and-func);
+}
+.form-button-submit:hover,
+.form-button-submit:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--btn-bg-hover-color);
+}
+.button-plane::after {
+  display: inline-block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icons/icon-submit.svg);
+  fill: currentColor;
+}
 /* Стилі до сторінки Портфоліо  ============================*/
 .portfolio-main {
   background-color: var(--bg-head-color);
@@ -659,7 +714,7 @@ li > .accent-button {
   background-color: var(--body-color);
   color: var(--btn-bg-accent-color);
 }
-.modal-form > h2 {
+.modal-form > p {
   margin-bottom: 12px;
   font-size: 20px;
   line-height: 1.15;
@@ -673,12 +728,71 @@ li > .accent-button {
   padding: 40px;
   margin: 0 auto;
 }
-.form-input {
-  padding: 11px 12px;
+.input-wrapper {
+  position: relative;
 }
-.user-comment {
-  padding: 20px;
+.form-input {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  padding-right: 12px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--btn-bg-accent-color);
+  outline: var(--btn-bg-accent-color);
+  transition: border var(--transition-time-and-func);
+}
+.form-input:hover + .icon-profile,
+.form-input:focus + .icon-profile,
+.form-input:hover + .icon-tel,
+.form-input:focus + .icon-tel,
+.form-input:hover + .icon-mail,
+.form-input:focus + .icon-mail {
+  fill: var(--btn-bg-accent-color);
+}
+.icon-profile {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+  transition: fill var(--transition-time-and-func);
+}
+.icon-tel {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+  transition: fill var(--transition-time-and-func);
+}
+.icon-mail {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  width: 15px;
+  height: 12px;
+  fill: currentColor;
+  transition: fill var(--transition-time-and-func);
+}
+.comment {
+  padding: 12px 16px;
+  height: 120px;
   resize: none;
+}
+.comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .form-label {
   margin-bottom: 4px;
@@ -688,9 +802,53 @@ li > .accent-button {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.margin-label {
-  margin-bottom: 4px;
+.terms {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
 }
-.margin-input {
-  margin-bottom: 10px;
+.accept-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-description-color);
+  cursor: pointer;
+}
+.accept-description::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--text-description-color);
+  content: "";
+  background-image: url(../images/icons/sprite.svg#icon-check);
+  fill: currentColor;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: fill var(--transition-time-and-func),
+    border var(--transition-time-and-func);
+}
+.check-input:checked + .accept-description::before {
+  border: 1px solid var(--btn-bg-accent-color);
+  background-color: var(--btn-bg-accent-color);
+  color: var(--body-color);
+  fill: var(--bg-body-color);
+}
+.check-input:focus + .accept-description::before {
+  border: 1px solid var(--btn-bg-accent-color);
+}
+.icon-check {
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 8px;
+  fill: transparent;
 }
