@@ -1,2 +1,5 @@
-# goit-markup-hw-06
-homework-03 for GoIT school (adding forms)
+# goit-markup-hw-05
+
+https://abdeev.github.io/goit-markup-hw-05/
+
+homework 05 for GoIT school
