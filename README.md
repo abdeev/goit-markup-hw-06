@@ -1,5 +1,5 @@
-# goit-markup-hw-05
+# goit-markup-hw-06
 
-https://abdeev.github.io/goit-markup-hw-05/
+https://abdeev.github.io/goit-markup-hw-06/
 
-homework 05 for GoIT school
+homework 06 for GoIT school
