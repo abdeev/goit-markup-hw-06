@@ -533,7 +533,12 @@
                 required>
               
             </span>
-            <button class="form-button-submit button-plane" type="submit">Підписатися</button>
+            <button class="form-button-submit button-plane" type="submit">Підписатися
+              <svg class="button-submit__icon" width="24" height="24">
+        <use href="./images/icons/sprite.svg#icon-submit"></use>
+      </svg>
+            </button>
+            
         </form>
         </div>
         </div>
@@ -603,19 +608,26 @@
         placeholder="Введіть текст"></textarea>
       </label>
       <span class="input-wrapper">
-        <input 
+      <label class="accept-description" for="accept-checker">
+        Погоджуюся з розсилкою та приймаю&nbsp;
+        <a class="terms" href="https://www.random.org/terms/2020-08-01/website">
+          &nbsp;Умови договору&nbsp;
+        </a>
+      <input 
         class="form-input check-input visually-hidden" 
         type="checkbox" 
         name="accept" 
         id="accept-checker"
         />
+        <span class="box-check" tabindex="0"></span>
         <svg class="icon-check" width="11" height="8">
         <use href="./images/icons/sprite.svg#icon-check"></use>
       </svg>
-      <label class="form-label accept-description" for="accept-checker">Погоджуюся з розсилкою та приймаю&nbsp;<a class="terms" href="https://www.random.org/terms/2020-08-01/website">&nbsp;Умови договору&nbsp;</a></label>
+    </label>
       </span>
       
-      <button type="submit" class="form-button-submit">Відправити</button>
+      <button type="submit" class="form-button-submit button-modal">Відправити</button>
+      
       </form>
       </div>
     </div>
