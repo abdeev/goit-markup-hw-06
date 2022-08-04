@@ -632,7 +632,7 @@ li > .accent-button {
 
 .project-item {
   position: relative;
-  flex-basis: calc(((100%-30px) - (2 * 30px)) / 3);
+  flex-basis: calc((100% - (2 * 30px)) / 3);
   background-color: var(--bg-head-color);
   transition: box-shadow var(--transition-time-and-func),
     translate var(--transition-time-and-func);
