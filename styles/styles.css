@@ -536,6 +536,7 @@ li > .accent-button {
   border-style: inset;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--bg-footer-color);
+  color: rgba(255, 255, 255, 0.6);
   transition: filter var(--transition-time-and-func);
 }
 .input-subscribe-form:hover {
@@ -769,6 +770,7 @@ li > .accent-button {
 }
 .input-wrapper {
   position: relative;
+  text-align: center;
 }
 .form-input {
   width: 100%;
@@ -779,12 +781,12 @@ li > .accent-button {
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border var(--transition-time-and-func);
 }
 .form-input:hover,
 .form-input:focus {
   border: 1px solid var(--btn-bg-accent-color);
   outline: var(--btn-bg-accent-color);
-  transition: border var(--transition-time-and-func);
 }
 .form-input:hover + .icon-profile,
 .form-input:focus + .icon-profile,
@@ -852,7 +854,7 @@ li > .accent-button {
 .accept-description {
   position: relative;
   align-items: center;
-  padding-left: 35px;
+  padding-left: 25px;
   margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
@@ -874,17 +876,18 @@ li > .accent-button {
 } */
 .icon-check {
   position: absolute;
-  top: 4px;
-  left: 13px;
+  top: 0px;
+  left: 0px;
   width: 11px;
   height: 8px;
+  transform: translate(3px, 3px);
   fill: var(--body-color);
   transition: fill var(--transition-time-and-func);
 }
 .box-check {
   position: absolute;
   top: 0px;
-  left: 11px;
+  left: 0;
   width: 16px;
   height: 15px;
   border: 1px solid var(--main-header-color);
